@@ -7,12 +7,15 @@ the Free Software Foundation, either version 3 of the License, or GNU General Pu
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.*/
 
+/*this program gives introduction to serial communication between arduino and pc
+  here a binary counter is implemented and the count of the counter increases if it recieves '+' from pc and decrements if its recieves '-'*/
 int i;
 void setup()
 {
   pinMode(11,OUTPUT);
   pinMode(12,OUTPUT);
   pinMode(13,OUTPUT);
+  /*initiallising serial communication at 9600 baud rate*/
   Serial.begin(9600);
  
 }
@@ -20,11 +23,13 @@ void loop()
 {
   int a,b,c;
   char sym;
-  
+  //checking if Serail data is available
    if (Serial.available()>0)
   {
+    //saving the first byte in the buffer into sym
    sym=Serial.read();
    delay(200);
+   //checking if the recieved charecter is '+' or '-'
   if(sym=='+') 
   {
     i++;

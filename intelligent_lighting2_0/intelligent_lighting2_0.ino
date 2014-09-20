@@ -19,6 +19,7 @@ void loop()
   int ldr=analogRead(3);
   Serial.println(ldr);
   delay(200);
+  //check ldr value and switch on different lights in the room based on the those values
   if(ldr<500)
   {
   digitalWrite(11,0);

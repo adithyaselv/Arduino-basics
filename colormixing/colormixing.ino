@@ -9,7 +9,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.*/
 
 int pin=0;
 int red=0,blue=0,green=0,i=0;
-
+/*concept of color mixing using buttons in RGB led*/
 void setup()
 {
   

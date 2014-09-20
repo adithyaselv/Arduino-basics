@@ -40,6 +40,7 @@ void loop()
     Serial.print(":");
   }
   Serial.println();
+  //check the time and take decisions
   if(data[0]==0x30 && data[1]==0x5)
     digitalWrite(12,1);
     if(data[0]==0x0 && data[1]==0x6)

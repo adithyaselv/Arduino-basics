@@ -1,3 +1,14 @@
+//Program to implement secure access system using DTMF (more formatted code)
+/*This program was wirtten by Adithya Selvaprithiviraj
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.*/
+
+//setting initial timers to 0
+// timers are used to check if the time taken to enter the paaword is more than 10 seconds
 int key=242;
 int count=0;
 int input=0;

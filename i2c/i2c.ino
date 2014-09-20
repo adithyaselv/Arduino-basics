@@ -12,8 +12,11 @@ void setup()
 {
   
   Serial.begin(9600);
+  // to start I2C communication
   Wire.begin();
+  //to connect to the slave with address 0x68
   Wire.beginTransmission(0x68);
+  //setting the clock time
   Wire.write((byte)0);
   Wire.write(0x25);
   Wire.write(0x05);
@@ -22,6 +25,7 @@ void setup()
   Wire.write(0x12);
   Wire.write(0x10);
   Wire.write(0x13);
+  //end communication
   Wire.endTransmission();
 }
 void loop()
@@ -30,6 +34,7 @@ void loop()
   Wire.write((byte)0);
   Wire.endTransmission();
   Wire.requestFrom(0x68,7);
+  /*begin communication and check the current time*/
   Wire.beginTransmission(0x68);
   for(int i=0;i<7;i++)
   {

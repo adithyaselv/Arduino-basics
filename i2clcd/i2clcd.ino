@@ -1,4 +1,4 @@
-//Program to implement clock using DS1307 and lcd display
+//Program to implement clock using DS1307 and  print lcd display
 /*This program was wirtten by Adithya Selvaprithiviraj
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
