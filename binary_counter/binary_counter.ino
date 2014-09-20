@@ -6,6 +6,9 @@ the Free Software Foundation, either version 3 of the License, or GNU General Pu
 
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.*/
+
+/* Anode of three leds are tied to digital pins 11,12 and 13 resppectively and cathode is tied to the ground*/
+//logic variable is used to toggle the counter from up and down states
 int logic=1;
 void setup()
 {
@@ -19,7 +22,7 @@ void loop ()
   int i;
   for(i=0;i<8;i+logic)
   {
-    
+    /* simple logic to slice binary bits from an integer*/
     a=i%2;
     b=(i/2)%2;
     c=(i/4)%2;

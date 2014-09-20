@@ -7,15 +7,16 @@ the Free Software Foundation, either version 3 of the License, or GNU General Pu
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.*/
 
+/* the three analog output pins of the accelerometer are directly tied to arduino A0 to A2*/
 void setup()
 {
   Serial.begin(9600);
 }
 void loop()
 {
-  int x=analogRead(2);
-  int y=analogRead(3);
-  int z=analogRead(5);
+  int x=analogRead(0);
+  int y=analogRead(1);
+  int z=analogRead(2);
   Serial.print("x=");
   Serial.println(x);
   Serial.print("y=");

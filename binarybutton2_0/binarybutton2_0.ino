@@ -7,6 +7,7 @@ the Free Software Foundation, either version 3 of the License, or GNU General Pu
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.*/
 
+/* this program increments and decrements counter when recived input from two buttons connected to pins 9 and 8 respectively*/
 int state=0;
 int i;
 void setup()
@@ -32,7 +33,7 @@ void loop()
     while(digitalRead(9)==0);
     delay(50);//debounce
   }
-    
+    /* simple logic to slice binary bits from an integer*/
     a=i%2;
     b=(i/2)%2;
     c=(i/4)%2;
