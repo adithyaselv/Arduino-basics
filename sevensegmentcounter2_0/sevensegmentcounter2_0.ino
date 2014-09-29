@@ -26,6 +26,7 @@ void loop()
   number[8]=B1111111;
   number[9]=B1101111;
   
+  //to count from 0-10
   for(int i=0;i<10;i++)
   {
     PORTD=number[i];

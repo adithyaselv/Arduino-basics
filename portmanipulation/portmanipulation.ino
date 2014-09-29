@@ -9,6 +9,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.*/
 
 void setup()
 {
+	//DDR specifies the type pin, Whether input ot output : B is the port
   DDRB=B111000;
 }
 void loop()

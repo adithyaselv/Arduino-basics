@@ -19,8 +19,7 @@ void setup()
   digitalWrite(3,1);
   attachInterrupt(0,count,RISING);
   pinMode(13,OUTPUT);
-  analogWrite(9,255
-  );
+  analogWrite(9,255);
   analogWrite(10,0);
 }
 void count()

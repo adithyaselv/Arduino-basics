@@ -1,16 +1,28 @@
+//Program to serially recieve number as binary
+/*This program was wirtten by Adithya Selvaprithiviraj
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.*/
+
 void setup()
 {
   Serial.begin(9600);
+  //leds
   pinMode(11,OUTPUT);
   pinMode(12,OUTPUT);
   pinMode(13,OUTPUT);
 }
 void loop()
 {
-
+//check if serial data available
   if(Serial.available()>0)
   {
+
     int count=Serial.read();
+    //convert ascii number to decimal
     count=count-48;
     if(count>=0&&count<8)
     {
