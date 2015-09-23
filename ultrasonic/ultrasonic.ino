@@ -7,7 +7,7 @@ the Free Software Foundation, either version 3 of the License, or GNU General Pu
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.*/
 
-// both pins of ping sensor are tied ti same digital pin
+// both pins of ping sensor are tied to same digital pin
 void setup()
 {
   Serial.begin(9600);

@@ -7,7 +7,7 @@ the Free Software Foundation, either version 3 of the License, or GNU General Pu
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.*/
 
-/*this program gives introduction to serial communication between arduino and pc
+/*this program gives introduction to serial communication between arduino and pc...
   here a binary counter is implemented and the count of the counter increases if it recieves '+' from pc and decrements if its recieves '-'*/
 int i;
 void setup()

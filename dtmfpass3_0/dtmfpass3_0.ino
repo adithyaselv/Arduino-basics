@@ -8,7 +8,7 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.*/
 
 //setting initial timers to 0
-// timers are used to check if the time taken to enter the paaword is more than 10 seconds
+// timers are used to check if the time taken to enter the password is more than 10 seconds
 long int prev=0;
 long int current=0;
 int count=0;
